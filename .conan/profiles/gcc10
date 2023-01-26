@@ -1,0 +1,16 @@
+[settings]
+os=Linux
+os_build=Linux
+arch=x86_64
+arch_build=x86_64
+compiler=gcc
+compiler.version=8
+compiler.libcxx=libstdc++11
+build_type=Release
+# tests can be linked with gtest libraries only if using same build_type,
+# see https://stackoverflow.com/questions/41408216/gtest-installed-with-conan-undefined-reference-to-testinginternalgetboolas/41409311#41409311
+gtest:build_type=Debug
+[options]
+[build_requires]
+[env]
+
