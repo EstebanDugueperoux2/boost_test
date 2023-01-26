@@ -1,0 +1,322 @@
+Exporting package recipe
+boost_test/0.0.1 exports_sources: Copied 1 '.txt' file: CMakeLists.txt
+boost_test/0.0.1 exports_sources: Copied 2 '.cpp' files: boost_test.cpp, main.cpp
+boost_test/0.0.1 exports_sources: Copied 1 '.h' file: boost_test.h
+boost_test/0.0.1: The stored package has not changed
+boost_test/0.0.1: Exported revision: 74d0c5c5dd51f7ba953f5b5c9a3e46c4
+Configuration (profile_host):
+[settings]
+arch=armv7hf
+build_type=Release
+compiler=gcc
+compiler.cppstd=14
+compiler.libcxx=libstdc++11
+compiler.version=10
+os=Linux
+[options]
+[build_requires]
+[env]
+AR=arm-linux-gnueabihf-ar
+AS=arm-linux-gnueabihf-as
+CC=arm-linux-gnueabihf-gcc
+CHOST=arm-linux-gnueabihf
+CONAN_CMAKE_FIND_ROOT_PATH=/usr/arm-linux-gnueabihf
+CONAN_CMAKE_FIND_ROOT_PATH_MODE_PROGRAM=Never
+CONAN_CMAKE_SYSROOT=/usr/arm-linux-gnueabihf
+CONAN_CMAKE_SYSTEM_NAME=Linux
+CONAN_CMAKE_SYSTEM_PROCESSOR=armv7
+CXX=arm-linux-gnueabihf-g++
+LD=arm-linux-gnueabihf-ld
+NM=arm-linux-gnueabihf-nm
+OBJCOPY=arm-linux-gnueabihf-objcopy
+OBJDUMP=arm-linux-gnueabihf-objdump
+RANLIB=arm-linux-gnueabihf-ranlib
+STRIP=arm-linux-gnueabihf-strip
+[conf]
+tools.system.package_manager:mode=install
+tools.system.package_manager:sudo=True
+
+Configuration (profile_build):
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++11
+compiler.version=8
+os=Linux
+os_build=Linux
+gtest:build_type=Debug
+[options]
+[build_requires]
+[env]
+
+boost/1.81.0: WARN: Package binary is corrupted, removing: c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41
+boost_test/0.0.1 (test package): Installing package
+Requirements
+    boost/1.81.0 from 'conancenter' - Cache
+    boost_test/0.0.1 from local cache - Cache
+    bzip2/1.0.8 from 'conancenter' - Cache
+    libbacktrace/cci.20210118 from 'conancenter' - Cache
+    zlib/1.2.13 from 'conancenter' - Cache
+Packages
+    boost/1.81.0:c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41 - Build
+    boost_test/0.0.1:6c077eba2d29002d5546e081aac5204d94e4d896 - Build
+    bzip2/1.0.8:36ba56ac85ca91f974c663dd4c1e0767b85438c3 - Cache
+    libbacktrace/cci.20210118:8c34e1d1c4c9d04af8efa9638d25d1f0e8e69e4f - Cache
+    zlib/1.2.13:8c34e1d1c4c9d04af8efa9638d25d1f0e8e69e4f - Cache
+Build requirements
+    b2/4.9.3 from 'conancenter' - Cache
+Build requirements packages
+    b2/4.9.3:4db1be536558d833e52e862fd84d64d75c2b3656 - Cache
+
+Cross-build from 'Linux:x86_64' to 'Linux:armv7hf'
+Installing (downloading, building) binaries...
+b2/4.9.3: Already installed!
+bzip2/1.0.8: Already installed!
+libbacktrace/cci.20210118: Already installed!
+zlib/1.2.13: Already installed!
+boost/1.81.0: Applying build-requirement: b2/4.9.3
+boost/1.81.0: WARN: Build folder is dirty, removing it: /root/.conan/data/boost/1.81.0/_/_/build/c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41
+boost/1.81.0: Building your package in /root/.conan/data/boost/1.81.0/_/_/build/c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41
+boost/1.81.0: Generator txt created conanbuildinfo.txt
+boost/1.81.0: Calling generate()
+boost/1.81.0: Aggregating env generators
+boost/1.81.0: Calling build()
+boost/1.81.0: WARN: replace_in_file didn't find pattern '$(>) > $(<)' in '/root/.conan/data/boost/1.81.0/_/_/source/src/libs/stacktrace/build/Jamfile.v2' file.
+boost/1.81.0: WARN: replace_in_file didn't find pattern '/* thread_local */' in '/root/.conan/data/boost/1.81.0/_/_/source/src/boost/stacktrace/detail/libbacktrace_impls.hpp' file.
+boost/1.81.0: WARN: replace_in_file didn't find pattern '/* static __thread */' in '/root/.conan/data/boost/1.81.0/_/_/source/src/boost/stacktrace/detail/libbacktrace_impls.hpp' file.
+boost/1.81.0: WARN: replace_in_file didn't find pattern 'local generic-os = [ set.difference $(all-os) : aix darwin vxworks solaris osf hpux ] ;' in '/root/.conan/data/boost/1.81.0/_/_/source/src/tools/build/src/tools/gcc.jam' file.
+boost/1.81.0: WARN: replace_in_file didn't find pattern 'local no-threading = android beos haiku sgi darwin vxworks ;' in '/root/.conan/data/boost/1.81.0/_/_/source/src/tools/build/src/tools/gcc.jam' file.
+boost/1.81.0: WARN: replace_in_file didn't find pattern '    <conditional>@numa' in '/root/.conan/data/boost/1.81.0/_/_/source/src/libs/fiber/build/Jamfile.v2' file.
+boost/1.81.0: WARN: Patching user-config.jam
+boost/1.81.0: WARN: 
+using zlib : 1.2.13 : <include>"/root/.conan/data/zlib/1.2.13/_/_/package/8c34e1d1c4c9d04af8efa9638d25d1f0e8e69e4f/include" <search>"/root/.conan/data/zlib/1.2.13/_/_/package/8c34e1d1c4c9d04af8efa9638d25d1f0e8e69e4f/lib" <name>z ;
+using bzip2 : 1.0.8 : <include>"/root/.conan/data/bzip2/1.0.8/_/_/package/36ba56ac85ca91f974c663dd4c1e0767b85438c3/include" <search>"/root/.conan/data/bzip2/1.0.8/_/_/package/36ba56ac85ca91f974c663dd4c1e0767b85438c3/lib" <name>bz2 ;
+using "gcc" :  :  "/usr/bin/g++-10" : 
+<compileflags>"-I/root/.conan/data/libbacktrace/cci.20210118/_/_/package/8c34e1d1c4c9d04af8efa9638d25d1f0e8e69e4f/include" <linkflags>"-L/root/.conan/data/libbacktrace/cci.20210118/_/_/package/8c34e1d1c4c9d04af8efa9638d25d1f0e8e69e4f/lib"  ;
+boost/1.81.0: Cross building, detecting compiler...
+boost/1.81.0: Cross building flags: ['-mfloat-abi=hard']
+boost/1.81.0: WARN: b2 -mfloat-abi=hard -q numa=on target-os=linux architecture=arm address-model=32 binary-format=elf abi=aapcs --layout=system --user-config=/root/.conan/data/boost/1.81.0/_/_/source/src/tools/build/user-config.jam -sNO_ZLIB=0 -sNO_BZIP2=0 -sNO_LZMA=1 -sNO_ZSTD=1 boost.locale.icu=off --disable-icu boost.locale.iconv=on boost.locale.iconv.lib=libc threading=multi visibility=hidden link=static variant=release --with-atomic --with-chrono --with-container --with-context --with-contract --with-coroutine --with-date_time --with-exception --with-fiber --with-filesystem --with-graph --with-iostreams --with-json --with-locale --with-log --with-math --with-nowide --with-program_options --with-random --with-regex --with-serialization --with-stacktrace --with-system --with-test --with-thread --with-timer --with-type_erasure --with-url --with-wave toolset=gcc cxxflags=-std=c++14 define=_GLIBCXX_USE_CXX11_ABI=1 pch=on linkflags="" cxxflags="-fPIC -DBOOST_STACKTRACE_ADDR2LINE_LOCATION=/usr/bin/addr2line" install --prefix=/root/.conan/data/boost/1.81.0/_/_/package/c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41 -j2 --abbreviate-paths -d0 --debug-configuration --build-dir="/root/.conan/data/boost/1.81.0/_/_/build/c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41/build-release"
+notice: found boost-build.jam at /root/.conan/data/boost/1.81.0/_/_/source/src/boost-build.jam
+notice: loading B2 from /root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/kernel/bootstrap.jam
+notice: Searching '/etc' '/root' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/kernel' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/util' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/build' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/tools' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/contrib' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/.' for site-config configuration file 'site-config.jam'.
+notice: Configuration file 'site-config.jam' not found in '/etc' '/root' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/kernel' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/util' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/build' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/tools' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/contrib' '/root/.conan/data/b2/4.9.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/.'.
+notice: Loading explicitly specified user configuration file:
+    /root/.conan/data/boost/1.81.0/_/_/source/src/tools/build/user-config.jam
+notice: Searching '/root/.conan/data/boost/1.81.0/_/_/source/src/tools/build' for user-config configuration file 'user-config.jam'.
+notice: Loading user-config configuration file 'user-config.jam' from '/root/.conan/data/boost/1.81.0/_/_/source/src/tools/build'.
+notice: [zlib] Using pre-installed library
+notice: [zlib] Condition
+notice: [bzip2] Using pre-installed library
+notice: [bzip2] Condition
+notice: will use '/usr/bin/g++-10' for gcc, condition <toolset>gcc-10
+notice: using gcc libraries :: <toolset>gcc-10 :: /usr/bin /usr/lib /usr/lib32 /usr/lib64
+notice: using gcc archiver :: <toolset>gcc-10 :: /usr/bin/ar
+warning: toolset gcc initialization: can not find tool windres
+warning: initialized from /root/.conan/data/boost/1.81.0/_/_/source/src/tools/build/user-config.jam:5
+notice: using rc compiler :: <toolset>gcc-10 :: /usr/bin/as
+notice: [zlib] zlib is already configured
+notice: [bzip2] bzip is already configured
+notice: iostreams: not using lzma compression 
+notice: iostreams: not using zstd compression 
+notice: [python-cfg] Configuring python...
+notice: [python-cfg] Checking interpreter command "python"...
+notice: [python-cfg] running command 'python -c "from sys import *; print('version=%d.%d\nplatform=%s\nprefix=%s\nexec_prefix=%s\nexecutable=%s' % (version_info[0],version_info[1],platform,prefix,exec_prefix,executable))" 2>&1'
+notice: [python-cfg] ...does not invoke a working interpreter
+notice: [python-cfg] Python headers and libraries not found.
+Performing configuration checks
+
+    - default address-model    : 64-bit [1]
+    - default architecture     : x86 [1]
+    - has std::atomic_ref      : no [2]
+    - has statx                : yes [2]
+    - has init_priority attribute : yes [2]
+    - has stat::st_blksize     : yes [2]
+    - has stat::st_mtim        : yes [2]
+    - has stat::st_mtimensec   : no [2]
+    - has stat::st_mtimespec   : no [2]
+    - has stat::st_birthtim    : no [2]
+    - has stat::st_birthtimensec : no [2]
+    - has stat::st_birthtimespec : no [2]
+    - has fdopendir(O_NOFOLLOW) : yes [2]
+    - has POSIX *at APIs       : yes [2]
+    - cxx11_auto_declarations  : yes [2]
+    - cxx11_constexpr          : yes [2]
+    - cxx11_defaulted_functions : yes [2]
+    - cxx11_final              : yes [2]
+    - cxx11_hdr_mutex          : yes [2]
+    - cxx11_hdr_tuple          : yes [2]
+    - cxx11_lambdas            : yes [2]
+    - cxx11_noexcept           : yes [2]
+    - cxx11_nullptr            : yes [2]
+    - cxx11_rvalue_references  : yes [2]
+    - cxx11_template_aliases   : yes [2]
+    - cxx11_thread_local       : yes [2]
+    - cxx11_variadic_templates : yes [2]
+    - has_icu builds           : no [2]
+    - zlib                     : yes [3]
+    - bzip2                    : no [3]
+    - cxx11_decltype           : yes [2]
+    - cxx11_basic_alignas      : yes [2]
+    - iconv (libc)             : yes [2]
+    - cxx11_defaulted_moves    : yes [2]
+    - cxx11_hdr_functional     : yes [2]
+    - cxx11_hdr_type_traits    : yes [2]
+    - cxx11_override           : yes [2]
+    - cxx11_range_based_for    : yes [2]
+    - cxx11_scoped_enums       : yes [2]
+    - cxx11_smart_ptr          : yes [2]
+    - cxx11_static_assert      : yes [2]
+    - native atomic int32 supported : yes [2]
+    - native syslog supported  : yes [2]
+    - pthread supports robust mutexes : yes [2]
+    - lockfree boost::atomic_flag : yes [2]
+    - gcc visibility           : yes [2]
+    - sfinae_expr              : yes [2]
+    - cxx11_unified_initialization_syntax : yes [2]
+    - cxx11_hdr_initializer_list : yes [2]
+    - cxx11_hdr_chrono         : yes [2]
+    - cxx11_numeric_limits     : yes [2]
+    - cxx11_hdr_array          : yes [2]
+    - cxx11_hdr_atomic         : yes [2]
+    - cxx11_allocator          : yes [2]
+    - cxx11_explicit_conversion_operators : yes [2]
+    - long double support      : yes [2]
+    - std::fstream is moveable and swappable : yes [2]
+    - Has Large File Support   : yes [2]
+    - Has attribute init_priority : yes [2]
+    - libbacktrace builds      : yes [2]
+    - addr2line builds         : yes [2]
+    - WinDbg builds            : no [2]
+    - WinDbg builds            : no [4]
+    - WinDbgCached builds      : no [2]
+    - WinDbgCached builds      : no [4]
+    - BOOST_COMP_GNUC >= 4.3.0 : yes [2]
+    - cxx11_hdr_thread         : yes [2]
+    - cxx11_hdr_regex          : yes [2]
+
+[1] gcc-10
+[2] gcc-10/rls/abi-apcs/adrs-mdl-32/archt-arm/bst.l-lbc/bst.l-on/bst.l-off/lnk-sttc/nm-on/thrdp-pthrd/thrd-mlt/vsblt-hdn
+[3] lnk-sttc
+[4] gcc-10/rls/abi-apcs/adrs-mdl-32/archt-arm/bst.l-lbc/bst.l-on/bst.l-off/bld-no/lnk-sttc/nm-on/thrdp-pthrd/thrd-mlt/vsblt-hdn
+
+Component configuration:
+
+    - atomic                   : building
+    - chrono                   : building
+    - container                : building
+    - context                  : building
+    - contract                 : building
+    - coroutine                : building
+    - date_time                : building
+    - exception                : building
+    - fiber                    : building
+    - filesystem               : building
+    - graph                    : building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : building
+    - json                     : building
+    - locale                   : building
+    - log                      : building
+    - math                     : building
+    - mpi                      : not building
+    - nowide                   : building
+    - program_options          : building
+    - python                   : not building
+    - random                   : building
+    - regex                    : building
+    - serialization            : building
+    - stacktrace               : building
+    - system                   : building
+    - test                     : building
+    - thread                   : building
+    - timer                    : building
+    - type_erasure             : building
+    - url                      : building
+    - wave                     : building
+
+make_arm_aapcs_elf_gas.S: Assembler messages:
+make_arm_aapcs_elf_gas.S:46: Error: unknown pseudo-op: `.syntax'
+make_arm_aapcs_elf_gas.S:48: Error: junk at end of line, first unrecognized character is `@'
+make_arm_aapcs_elf_gas.S:49: Error: no such instruction: `bic a1,a1,'
+make_arm_aapcs_elf_gas.S:51: Error: junk at end of line, first unrecognized character is `@'
+make_arm_aapcs_elf_gas.S:52: Error: too many memory references for `sub'
+make_arm_aapcs_elf_gas.S:54: Error: junk at end of line, first unrecognized character is `@'
+make_arm_aapcs_elf_gas.S:55: Error: invalid char '[' beginning operand 2 `[a1'
+make_arm_aapcs_elf_gas.S:57: Error: junk at end of line, first unrecognized character is `@'
+make_arm_aapcs_elf_gas.S:58: Error: too many memory references for `add'
+make_arm_aapcs_elf_gas.S:59: Error: too many memory references for `mov'
+make_arm_aapcs_elf_gas.S:60: Error: invalid char '[' beginning operand 2 `[a1'
+make_arm_aapcs_elf_gas.S:62: Error: junk at end of line, first unrecognized character is `@'
+make_arm_aapcs_elf_gas.S:63: Error: no such instruction: `adr a2,finish'
+make_arm_aapcs_elf_gas.S:64: Error: junk at end of line, first unrecognized character is `@'
+make_arm_aapcs_elf_gas.S:65: Error: junk at end of line, first unrecognized character is `@'
+make_arm_aapcs_elf_gas.S:66: Error: invalid char '[' beginning operand 2 `[a1'
+make_arm_aapcs_elf_gas.S:71: Error: no such instruction: `bx lr@return pointer to context-data'
+make_arm_aapcs_elf_gas.S:74: Error: junk at end of line, first unrecognized character is `@'
+make_arm_aapcs_elf_gas.S:75: Error: expecting operand after ','; got nothing
+make_arm_aapcs_elf_gas.S:76: Error: junk at end of line, first unrecognized character is `@'
+make_arm_aapcs_elf_gas.S:77: Error: no such instruction: `bl _exit@PLT'
+make_arm_aapcs_elf_gas.S:80: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S: Assembler messages:
+jump_arm_aapcs_elf_gas.S:46: Error: unknown pseudo-op: `.syntax'
+jump_arm_aapcs_elf_gas.S:48: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:49: Error: invalid char '{' beginning operand 1 `{lr}'
+jump_arm_aapcs_elf_gas.S:50: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:51: Error: invalid char '{' beginning operand 1 `{a1'
+jump_arm_aapcs_elf_gas.S:53: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:54: Error: too many memory references for `sub'
+jump_arm_aapcs_elf_gas.S:60: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:61: Error: too many memory references for `mov'
+jump_arm_aapcs_elf_gas.S:63: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:64: Error: too many memory references for `mov'
+jump_arm_aapcs_elf_gas.S:70: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:71: Error: too many memory references for `add'
+jump_arm_aapcs_elf_gas.S:73: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:74: Error: invalid char '{' beginning operand 1 `{a4'
+jump_arm_aapcs_elf_gas.S:76: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:77: Error: invalid char '[' beginning operand 2 `[a4'
+jump_arm_aapcs_elf_gas.S:78: Error: invalid char '[' beginning operand 2 `[a4'
+jump_arm_aapcs_elf_gas.S:79: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:80: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:81: Error: too many memory references for `mov'
+jump_arm_aapcs_elf_gas.S:83: Error: junk at end of line, first unrecognized character is `@'
+jump_arm_aapcs_elf_gas.S:84: Error: invalid char '{' beginning operand 1 `{pc}'
+jump_arm_aapcs_elf_gas.S:87: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S: Assembler messages:
+ontop_arm_aapcs_elf_gas.S:46: Error: unknown pseudo-op: `.syntax'
+ontop_arm_aapcs_elf_gas.S:48: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:49: Error: invalid char '{' beginning operand 1 `{lr}'
+ontop_arm_aapcs_elf_gas.S:50: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:51: Error: invalid char '{' beginning operand 1 `{a1'
+ontop_arm_aapcs_elf_gas.S:53: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:54: Error: too many memory references for `sub'
+ontop_arm_aapcs_elf_gas.S:60: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:61: Error: too many memory references for `mov'
+ontop_arm_aapcs_elf_gas.S:63: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:64: Error: too many memory references for `mov'
+ontop_arm_aapcs_elf_gas.S:66: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:67: Error: too many memory references for `mov'
+ontop_arm_aapcs_elf_gas.S:73: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:74: Error: too many memory references for `add'
+ontop_arm_aapcs_elf_gas.S:76: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:77: Error: invalid char '{' beginning operand 1 `{a1'
+ontop_arm_aapcs_elf_gas.S:79: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:80: Error: invalid char '[' beginning operand 2 `[a1'
+ontop_arm_aapcs_elf_gas.S:81: Error: invalid char '[' beginning operand 2 `[a1'
+ontop_arm_aapcs_elf_gas.S:82: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:83: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:85: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:86: Error: too many memory references for `add'
+ontop_arm_aapcs_elf_gas.S:88: Error: junk at end of line, first unrecognized character is `@'
+ontop_arm_aapcs_elf_gas.S:89: Error: no such instruction: `bx a4'
+ontop_arm_aapcs_elf_gas.S:92: Error: junk at end of line, first unrecognized character is `@'
+...failed updating 3 targets...
+boost/1.81.0: 
+boost/1.81.0: ERROR: Package 'c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41' build failed
+boost/1.81.0: WARN: Build folder /root/.conan/data/boost/1.81.0/_/_/build/c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41/build-release
+ERROR: boost/1.81.0: Error in build() method, line 872
+	self.run(full_command)
+	ConanException: Error 1 while executing b2 -mfloat-abi=hard -q numa=on target-os=linux architecture=arm address-model=32 binary-format=elf abi=aapcs --layout=system --user-config=/root/.conan/data/boost/1.81.0/_/_/source/src/tools/build/user-config.jam -sNO_ZLIB=0 -sNO_BZIP2=0 -sNO_LZMA=1 -sNO_ZSTD=1 boost.locale.icu=off --disable-icu boost.locale.iconv=on boost.locale.iconv.lib=libc threading=multi visibility=hidden link=static variant=release --with-atomic --with-chrono --with-container --with-context --with-contract --with-coroutine --with-date_time --with-exception --with-fiber --with-filesystem --with-graph --with-iostreams --with-json --with-locale --with-log --with-math --with-nowide --with-program_options --with-random --with-regex --with-serialization --with-stacktrace --with-system --with-test --with-thread --with-timer --with-type_erasure --with-url --with-wave toolset=gcc cxxflags=-std=c++14 define=_GLIBCXX_USE_CXX11_ABI=1 pch=on linkflags="" cxxflags="-fPIC -DBOOST_STACKTRACE_ADDR2LINE_LOCATION=/usr/bin/addr2line" install --prefix=/root/.conan/data/boost/1.81.0/_/_/package/c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41 -j2 --abbreviate-paths -d0 --debug-configuration --build-dir="/root/.conan/data/boost/1.81.0/_/_/build/c1fd5a37cb17c6211a93fe9c766e4e307b0b4b41/build-release"
