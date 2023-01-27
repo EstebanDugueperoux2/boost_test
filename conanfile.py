@@ -19,14 +19,29 @@ class BoostTestConan(ConanFile):
     # Sources are located in the same place as this recipe, copy them to the recipe
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
 
+    options = {
+        "shared": [True, False],
+        "fPIC": [True, False],
+    }
+    default_options = {
+        "shared": False,
+        "fPIC": True,
+    }
+    
+    tool_requires = (
+        "cmake/3.25.0",
+        "ninja/1.11.1",
+        "ccache/4.6"
+    )
+    
     def requirements(self):
-        self.requires("boost/1.81.0")
+        self.requires("boost/1.69.0")
 
     def layout(self):
         cmake_layout(self)
 
     def generate(self):
-        tc = CMakeToolchain(self)
+        tc = CMakeToolchain(self, generator="Ninja")
         tc.generate()
 
         deps = CMakeDeps(self)
